@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap');
+
+@font-face {
+	font-family: "neris";
+	src: url("/fonts/Neris-Light.otf");
+}
+
+* {
+	font-family: 'neris', sans-serif !important;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+/* reset CSS */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* /reset */
+
+
+body {
+	background: #000;
+	color: #eee;
+	height: 100vh;
+	cursor: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+
+
+
+	width: 90%;
+	height: 100%;
+	background: #fff;
+	color: #222;
+}
+
+/* pointer */
+
+#pointer {
+
+	width: 25px;
+	height: 25px;
+
+	background-color: #fff;
+
+	/* border-radius: 50%; */
+	position: fixed;
+	/* transition-delay: 0.2s; */
+	border: 1px solid transparent;
+	transition: .2s linear width, .2s linear height, 2s linear clipPath;
+	mix-blend-mode: difference;
+
+	clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+
+	animation-duration: 7s;
+	animation-name: rot;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	z-index: 9;
+	pointer-events: none;
+	top: 0;
+	left: 0;
+
+}
+
+span#sign {
+
+	width: 20%;
+	display: inline-flex;
+
+}
+
+.box__title>span {
+	/* width: 50%; */
+
+}
+
+.box__title {
+	opacity: 1;
+	transition: .2s ease;
+}
+
+#pointer.bigger {
+	width: 150px !important;
+	height: 150px !important;
+	animation-name: rot2 !important;
+}
+
+.box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.box__title {
+	font-size: 12rem;
+	display: flex;
+	flex-flow: row;
+	width: 100%;
+	justify-content: center;
+}
+
+@keyframes rot {
+	0% {
+		transform: rotate(0deg)
+	}
+
+
+
+	50% {
+		transform: rotate(180deg)
+	}
+
+	100% {
+		transform: rotate(360deg)
+	}
+}
+
+@keyframes rot2 {
+	0% {
+		transform: rotate(0deg)
+	}
+
+
+
+	50% {
+		transform: rotate(-180deg)
+	}
+
+	100% {
+		transform: rotate(-360deg)
+	}
+}
+
+#pointer.ac {
+	background: #000 !important;
+	opacity: 1 !important;
+}
+
+#pointer:active {
+	transform: scale(.8) !important;
+}
+
+#pointer.bigger {
+	width: 50px;
+	height: 50px;
+}
+
+/* ee2b47, 2c2e3e, 34374c */
