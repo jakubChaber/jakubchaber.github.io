@@ -154,7 +154,8 @@ table {
 
 
 body {
-	background: #18191a;
+	background: #1c2938;
+	/* #18191a; */
 	color: #eee;
 	height: 100vh;
 	cursor: none;
@@ -186,14 +187,35 @@ body {
 	transition: .5s ease opacity;
 	font-size: 4rem;
 	transition-delay: .2s;
-
 	line-height: 7rem;
 	width: 0;
+
 }
 
 .content em {
-	background: #222;
+
+	/* #222; */
 	color: #fff;
+	position: relative;
+	z-index: 1;
+}
+
+.content em::before {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	background: #ff9c91;
+	mix-blend-mode: difference;
+	z-index: -1;
+	transition: .5s ease;
+	transition-delay: .5s;
+}
+
+.content.ac em::before {
+	width: 100%;
 }
 
 .content.ac {
@@ -201,6 +223,10 @@ body {
 	display: block;
 	width: 100%;
 	padding: 5px;
+}
+
+.content a {
+	color: #cd3f3e;
 }
 
 /* pointer */
@@ -250,8 +276,8 @@ span#sign {
 }
 
 #pointer.bigger {
-	width: 150px !important;
-	height: 150px !important;
+	width: 100px !important;
+	height: 100px !important;
 	animation-name: rot2 !important;
 }
 
