@@ -162,6 +162,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
 }
 
 .container {
@@ -198,6 +199,8 @@ body {
 	color: #fff;
 	position: relative;
 	z-index: 1;
+	display: inline-flex;
+	margin-top: .1rem;
 }
 
 .content em::before {
