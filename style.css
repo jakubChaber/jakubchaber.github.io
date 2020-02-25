@@ -214,8 +214,8 @@ body {
 	background: #ff9c91;
 	mix-blend-mode: difference;
 	z-index: -1;
-	transition: .5s ease;
-	transition-delay: .5s;
+	transition: .3s ease;
+	transition-delay: .3s;
 }
 
 .content em::after {
@@ -226,10 +226,10 @@ body {
 	width: 0%;
 	height: 100%;
 	background: #222;
-	/* mix-blend-mode: luminosity; */
+	/* mix-blend-mode: difference; */
 	z-index: 1;
-	transition: .5s ease;
-	transition-delay: .5s;
+	transition: .3s ease;
+	transition-delay: .3s;
 }
 
 .content.ac em::before {
@@ -258,6 +258,8 @@ body {
 	font-weight: bold;
 	background-image: linear-gradient(#db859d, #4c5a78);
 	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
 	position: relative;
 	cursor: none;
 }

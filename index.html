@@ -88,7 +88,7 @@
 
 
         if (!mobileAndTabletcheck()) {
-            const tmpEm = document.querySelectorAll('em');
+            const tmpEm = document.querySelectorAll('em, a');
             for (const key in tmpEm) {
                 if (tmpEm.hasOwnProperty(key)) {
                     const el = tmpEm[key];
