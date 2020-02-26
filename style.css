@@ -264,14 +264,29 @@ body {
 	cursor: none;
 }
 
+.content.ac a::after {
+	content: '';
+	position: absolute;
+	height: 3px;
+	width: 100% !important;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+
+}
+
 .content a::after {
 	content: '';
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	height: 3px;
-	width: 100%;
+	width: 0;
+	/* 100%; */
 	background: #4c5a78;
+	transition: .2s ease;
+	transition-delay: .5s;
 
 }
 
