@@ -329,7 +329,7 @@ span#sign {
 
 	width: 20%;
 	display: inline-flex;
-
+	/*  */
 }
 
 .box__title>span {
@@ -395,6 +395,8 @@ span#sign {
 		transform: rotate(-360deg)
 	}
 }
+
+
 
 #pointer.ac {
 	background: #000 !important;
