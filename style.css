@@ -329,7 +329,14 @@ span#sign {
 
 	width: 20%;
 	display: inline-flex;
-	/*  */
+
+}
+
+#hello {
+	animation-duration: 1.5s;
+	animation-name: start;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
 }
 
 .box__title>span {
@@ -393,6 +400,33 @@ span#sign {
 
 	100% {
 		transform: rotate(-360deg)
+	}
+}
+
+@keyframes start {
+	0% {
+		transform: scale(.5);
+		opacity: 0;
+	}
+
+	50% {
+		transform: scale(.5);
+		opacity: .5;
+	}
+
+	60% {
+		transform: scale(1);
+		opacity: 1;
+	}
+
+	70% {
+		transform: scale(.9);
+		opacity: 1;
+	}
+
+	60% {
+		transform: scale(1);
+		opacity: 1;
 	}
 }
 
