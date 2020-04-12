@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#1c2938" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="rwd.css" />
     <link rel="shortcut icon" type="image/png" href="fav.png" />
 </head>
 
@@ -72,17 +73,7 @@
 
     </div>
 
-    <script>
-        // var observer = new IntersectionObserver(function (entries) {
 
-        //     if (entries[0].isIntersecting === true)
-        //         console.log('Element has just become visible in screen', entries[0].isIntersecting);
-        // }, {
-        //     threshold: [1]
-        // });
-
-        // observer.observe(document.querySelector(".container em"));
-    </script>
     <script>
         document.querySelector(`body`).addEventListener('wheel', function (e) {
             var contentWidth = document.querySelector('.content').clientWidth;
@@ -94,15 +85,6 @@
                 document.querySelector('.content.ac').scrollLeft -= contentWidth;
             }
 
-            // if (document.querySelector('.content.ac').scrollLeft >= 300) {
-            //     document.querySelector('.content.ac').style.backgroundColor = '#fff';
-            //     document.querySelector('nav').style.backgroundColor = '#fff';
-            //     document.querySelector('.content.ac').style.color = '#000';
-            // } else {
-            //     document.querySelector('.content.ac').style.backgroundColor = '#000';
-            //     document.querySelector('nav').style.backgroundColor = '#000';
-            //     document.querySelector('.content.ac').style.color = '#eee';
-            // }
         });
     </script>
     <script>
@@ -222,19 +204,6 @@
                     document.getElementById('pointer').style.clipPath =
                         'unset';
                 })
-                //disabled
-                // document.querySelector('.disabled').addEventListener('mousemove', () => {
-                //     document.getElementById('pointer').style.borderRadius = '0';
-                //     document.getElementById('pointer').style.clipPath =
-                //         'polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%)';
-
-                // })
-                // document.querySelector('.disabled').addEventListener('mouseleave', () => {
-                //     document.getElementById('pointer').style.borderRadius = '50%';
-                //     document.getElementById('pointer').style.clipPath =
-                //         'unset';
-                // })
-
 
             });
 
@@ -253,13 +222,13 @@
     <script>
         scrollThePage = () => {
             let containerWidth = document.querySelector('.content').clientWidth;
-            document.querySelector('.content.ac').scrollLeft += 300;
+            document.querySelector('.content.ac').scrollLeft += containerWidth;
         }
     </script>
     <script>
         scrollThePageBack = () => {
             let containerWidth = document.querySelector('.content').clientWidth;
-            document.querySelector('.content.ac').scrollLeft -= 300;
+            document.querySelector('.content.ac').scrollLeft -= containerWidth;
         }
     </script>
     <script>

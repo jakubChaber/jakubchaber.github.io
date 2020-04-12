@@ -1,0 +1,23 @@
+@media (max-width: 1200px) {
+	.box__title {
+		font-size: 5rem;
+	}
+
+	.box {
+		transform: translateY(-50%);
+	}
+
+	.content {
+		transition: .5s ease opacity;
+		transition-delay: 0s;
+		font-size: 2rem;
+		transition-delay: .2s;
+		line-height: 3rem;
+	}
+
+	#list>span {
+		width: 100%;
+		font-size: 3rem;
+		height: 3rem;
+	}
+}
