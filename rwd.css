@@ -20,4 +20,22 @@
 		font-size: 3rem;
 		height: 3rem;
 	}
+
+	div.page {
+		width: 90vw !important;
+	}
+
+	nav>button {
+		/* background: #fff; */
+		width: 50% !important;
+	}
+
+	aside {
+
+		left: .5rem !important;
+	}
+
+	.nav__links button img {
+		width: 1.5rem !important;
+	}
 }
