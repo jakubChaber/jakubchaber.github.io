@@ -28,6 +28,7 @@
 
 	div.page {
 		min-width: 95vw !important;
+		font-size: 1.7rem;
 	}
 
 	nav>button {

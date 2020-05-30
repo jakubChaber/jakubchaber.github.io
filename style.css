@@ -529,15 +529,16 @@ aside.act {
 
 #msg {
 	position: absolute;
-	left: calc(35vw - 1rem);
-	right: 0;
-	bottom: 9rem;
+	left: 0;
+
+	bottom: 0;
 	font-size: 1rem;
-	width: 20vw;
+	width: 100%;
 	color: #b5b5b5;
 	/* color: #fff; */
 	display:flex;
 	justify-content:center;
+	align-items:center;
 	font-family: 'nerisBlack', sans-serif !important;
 }
 
@@ -595,7 +596,7 @@ nav > button {
 }
 
 div.page {
-	width: calc(90vw - 10px);
+	width: calc(90vw - 0px);
 	transform:translateY(-35px);
 	display: flex;
 	height: 100%;
