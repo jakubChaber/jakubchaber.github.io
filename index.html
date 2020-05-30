@@ -79,10 +79,12 @@
             var contentWidth = document.querySelector('.content').clientWidth;
 
             if (e.deltaY > 0) {
-                document.querySelector('.content.ac').scrollLeft += contentWidth;
+                document.querySelector('.content.ac').scrollLeft += 200;
+                // contentWidth;
                 console.log(contentWidth);
             } else {
-                document.querySelector('.content.ac').scrollLeft -= contentWidth;
+                document.querySelector('.content.ac').scrollLeft -= 200;
+                // contentWidth;
             }
 
         });
