@@ -568,8 +568,18 @@ nav:hover .nav__links div {
 .nav__links button img {
 	width:2.5rem;
 	height:auto;
+	transition:.2s ease;
+	padding:5px;
+	border-radius:5px;
+	transform:rotate(20deg);
 }
 
+.nav__links button:hover img {
+	background:#fff !important;
+	padding:5px;
+	border-radius:5px;
+	transform:rotate(0deg) !important;
+}
 
 
 .nav__links {
