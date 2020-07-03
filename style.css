@@ -203,7 +203,8 @@ html {
 }
 
 body {
-  background: rgba(var(--red), var(--green), var(--blue), 0.8);
+  background-image: radial-gradient(transparent, #000);
+  background-color: rgba(var(--red), var(--green), var(--blue), 0.8);
   /* rgb(28, 40, 55) */
   color: #eee;
   height: 100vh;
