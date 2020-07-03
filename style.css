@@ -216,7 +216,8 @@ body {
 }
 
 #next {
-  background: #1c2938;
+  background: rgb(var(--red), var(--green), var(--blue));
+  transition: 0.8s ease-in-out;
   color: #eee;
 }
 
