@@ -39,6 +39,7 @@
         </div>
       </div>
       <div class="content">
+        <div id="stripe"></div>
         <span id="msg">(scroll)</span>
         <div>
           <div class="main page" id="first">
@@ -70,9 +71,29 @@
       </div>
     </div>
     <script>
+      document.querySelector(`body`).addEventListener(
+        "wheel",
+        () => {
+          document.body.style.setProperty(
+            "--red",
+            Math.floor(Math.random() * 100)
+          );
+          document.body.style.setProperty(
+            "--green",
+            Math.floor(Math.random() * 100)
+          );
+          document.body.style.setProperty(
+            "--blue",
+            Math.floor(Math.random() * 100)
+          );
+        },
+        false
+      );
+    </script>
+    <script>
       document.querySelector(`body`).addEventListener("wheel", function (e) {
         var contentWidth = document.querySelector(".content").clientWidth;
-
+        console.log("document.body.style", document.body.style);
         if (e.deltaY > 0) {
           document.querySelector(".content.ac").scrollLeft += 200;
           // contentWidth;
@@ -202,6 +223,7 @@
                 document.getElementById("pointer").clientWidth / 2;
               let tempHeight =
                 document.getElementById("pointer").clientHeight / 2;
+
               document.getElementById("pointer").style.top =
                 e.y - tempHeight + "px";
               document.getElementById("pointer").style.left =
