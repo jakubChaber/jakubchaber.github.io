@@ -219,7 +219,7 @@ body {
 #next {
   /* background: rgba(var(--red), var(--green), var(--blue), 0.6); */
   transition: 0.8s ease-in-out;
-  color: #eee;
+  /* color: #eee; */
 }
 
 .container {
@@ -586,6 +586,8 @@ nav > button {
   width: 7rem;
   height: 6rem;
   border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
 }
 
 .content {
