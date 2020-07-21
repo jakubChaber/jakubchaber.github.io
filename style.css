@@ -204,7 +204,7 @@ html {
 
 body {
   background-image: radial-gradient(transparent, #000);
-  background-color: rgba(var(--red), var(--green), var(--blue), 1);
+  background-color: rgba(var(--red), var(--green), var(--blue), 0.6);
   /* rgb(28, 40, 55) */
   color: #eee;
   height: 100vh;
@@ -217,7 +217,7 @@ body {
 }
 
 #next {
-  background: rgba(var(--red), var(--green), var(--blue), 0.8);
+  /* background: rgba(var(--red), var(--green), var(--blue), 0.6); */
   transition: 0.8s ease-in-out;
   color: #eee;
 }
@@ -609,7 +609,7 @@ div.list {
 #list {
   width: 90%;
   margin: 0 auto;
-  flex-wrap: wrap;
+
   display: flex;
   height: 60%;
   flex-flow: row;
@@ -621,12 +621,12 @@ div.list {
 #list > span {
   width: 49%;
   padding: 0;
-  font-size: 5rem;
+  /* font-size: 5rem; */
   height: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: rotate(20deg);
+  /* transform: rotate(20deg); */
 }
 
 #more {
