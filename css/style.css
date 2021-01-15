@@ -455,3 +455,16 @@ button:active, footer a:active{
 .mainList{
   overflow-x:hidden;
 }
+
+.hiddenRow{
+  margin:.5rem 0;
+}
+
+@media (pointer:coarse) {
+  #pointer{
+    display:none;
+  }
+  .modal{
+    display:none!important;
+  }
+}

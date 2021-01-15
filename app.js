@@ -25,6 +25,10 @@
                       }   
   }
 
+
+
+
+
 //strat
   const first = new init;
   first.start();
@@ -43,8 +47,13 @@
       first.start();
   });
 
+
+
+
+
   //cursor
   function setCursor(){
+
       window.addEventListener('mousemove',function(e){
         let tempWidth  = (document.querySelector('#pointer').clientWidth)/2;
         let tempHeight = (document.querySelector('#pointer').clientHeight)/2;
@@ -66,6 +75,11 @@
   window.addEventListener('scroll',()=>{
     setCursor();
   })
+
+
+
+
+
 
   function first3D(){
     const card = document.querySelector(".intro-text");
