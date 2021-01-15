@@ -438,6 +438,9 @@ button:active, footer a:active{
   .t2ndLine{
       font-size:1.5rem;
   }
+  .mainList .tinyText{
+    width:100%!important;
+}
 }
 @media all and (max-width:480p,){
   .hide .text{
@@ -467,4 +470,8 @@ button:active, footer a:active{
   .modal{
     display:none!important;
   }
+}
+
+.mainList .tinyText{
+  padding:5rem 0;width:60%; padding-top:0;
 }

@@ -42,6 +42,7 @@
     .block header > div{
         font-size:2rem!important;
     }
+
 }
 @media all and (max-width:768px){
     .hide .text{
@@ -50,6 +51,7 @@
     .t2ndLine{
         font-size:1.5rem;
     }
+
 }
 @media all and (max-width:480p,){
     .hide .text{
