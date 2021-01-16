@@ -3,7 +3,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap'); */
 
 @import 'row.css';
-@import 'block.css';
+/* @import 'block.css'; */
 
 
 @font-face {
@@ -14,6 +14,11 @@
 @font-face {
   font-family: "BaskervilleBold";
   src: url("./fonts/LibreBaskerville-Bold.ttf") format("truetype");
+       /* url("/fonts/OpenSans-Regular-webfont.woff") format("woff"); */
+}
+@font-face {
+  font-family: "BaskervilleItalic";
+  src: url("./fonts/LibreBaskerville-Italic.ttf") format("truetype");
        /* url("/fonts/OpenSans-Regular-webfont.woff") format("woff"); */
 }
 * {
@@ -375,7 +380,8 @@ button:active, footer a:active{
   display:block;
   overflow:hidden;
   font-size:3rem;
-  font-family:"Baskerville";
+  font-family:"BaskervilleItalic";
+  /* font-family:"Baskerville"; */
 }
 .hiddenRow{
   overflow:hidden!important;
@@ -475,3 +481,180 @@ button:active, footer a:active{
 .mainList .tinyText{
   padding:5rem 0;width:60%; padding-top:0;
 }
+/* /block */
+
+
+.block {
+  padding: 1rem;
+  box-shadow: 0 20px 80px 0 rgba(0,0,0,.45);
+  border-radius: 5px;
+  width: clamp(300px, 60%, 100vw);
+  /* transform-style: preserve-3d; */
+  transition: .2s ease;
+  height: 450px;
+  /* background-color: #000;
+   */
+   background-color:#eee;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow:column;
+  position:relative;
+  background-color:#fff;
+overflow:hidden;
+  /* perspective: 600px; */
+}
+.block > *{
+  width:auto;
+}
+.block header> div{
+  position:absolute;
+  top:0;
+  /* color:#ffffff50;
+   */
+   color:#000;
+  font-size:5rem;
+  text-transform:uppercase;
+  left:2rem;
+  width: 20%;
+  display: flex;
+  transition:.2s linear all;
+  transform-origin: bottom left;
+  opacity:.333;
+  font-family:'Lato';
+}
+.block > header{
+  transition: 0.2s;
+  transition-delay:.6s;
+  transform:scale(1);
+}
+.block .content{
+  position:absolute;
+  color:#dadada;
+  font-size:2rem;
+  top:0;
+  height:100%;
+  left:0;
+  right:0;
+  margin:0 auto;
+  width:100%;
+  align-items:center;
+  display:flex;
+  flex-flow:column;
+  opacity:1;
+  transform:scale(0);
+  transition:.2s ease;
+  transition-delay:.6s;
+  justify-content:center;
+  background:#dadada;
+}
+.legend{
+  /* width: 38%; */
+  padding:.5rem;
+  font-family:lato;
+}
+.block:hover .content{
+  transform:scale(1);
+  display: flex;
+  flex-flow: row;
+}
+.block .content{
+  display: flex;
+  flex-flow: row;
+}
+.block:hover header> div{
+  left:0rem;
+  top:-5rem;
+  transform:rotate(90deg) ;;
+}
+.block:hover > .content header{
+  transform:scale(1);
+}
+.block > .content header{
+  transition: 0.2s;
+  transform:scale(0);
+  transition-delay:.6s;
+  text-transform:uppercase;
+  pointer-events:none;
+  mix-blend-mode: difference!important;
+}
+.block > .content div{
+  height: 35%;
+}
+.block:hover > header{
+transform:scale(0);
+}
+footer a{
+  background:#000;
+
+  font-size:1rem;
+  text-transform:uppercase;
+  padding:1rem;
+  width:200px;
+
+  color:#fff!important;
+  z-index:999999999999999999999!important;
+  position:relative;
+}
+.block header div:nth-of-type(1){
+  transition-delay:.1s;
+}
+.block header div:nth-of-type(2){
+  transition-delay:.2s;
+}
+.block header div:nth-of-type(3){
+  transition-delay:.3s;
+}
+.legend div{
+  mix-blend-mode: difference;
+}
+
+.prev {
+  width: 50%;
+  height: 80%!important;
+  background: red;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  transform: rotate3d(0, 1, .2, 45deg)!important;
+}
+
+.modal{
+position:fixed!important;
+top:0;
+left:0;
+width:350px;
+height:250px;
+background:#fff;
+box-shadow: 1px 1px 0 0 #222;
+opacity:0;
+transition:1s ease opacity, 1s ease transform ;
+transition-delay:.7s;
+display: none;
+}
+.block:hover .modal{
+opacity:.8;  
+transform: translateX(0px);
+}
+
+
+.map{
+  background-image: url(../img/map.png)!important;
+  background-repeat: no-repeat!important;
+  background-size: 60%!important;
+  background-position: right!important;
+}
+.extable{
+background-image: url(../img/ex.png)!important;
+background-repeat: no-repeat!important;
+/* background-size: 60%!important; */
+background-position: right!important;
+}
+
+
+.modal{
+transform: translateX(150px);
+border-radius:5px;
+overflow:hidden;
+}
+
+/* eoblock */
