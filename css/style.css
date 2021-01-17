@@ -445,8 +445,13 @@ button:active, footer a:active{
       font-size:1.5rem;
   }
   .mainList .tinyText{
-    width:100%!important;
+    width:90%!important;
+    padding-left:10%;
 }
+section{
+  width:100%;
+}
+
 }
 @media all and (max-width:480p,){
   .hide .text{
