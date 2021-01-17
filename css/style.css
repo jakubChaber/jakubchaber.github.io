@@ -449,7 +449,7 @@ button:active, footer a:active{
     padding-left:10%;
 }
 section{
-  width:100%;
+  width:100%!important;
 }
 
 }
