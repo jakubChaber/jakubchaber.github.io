@@ -337,14 +337,10 @@ button:active, footer a:active{
   /* opacity:0; */
   display:block;
   overflow:hidden;
-  font-size:3rem;
-  font-family:"BaskervilleItalic";
-  /* font-family:"Baskerville"; */
-}
+  font-size:3rem;}
 .hiddenRow{
   overflow:hidden!important;
 }
-
 /*     */
 /* rwd */
 /*     */
@@ -396,8 +392,11 @@ button:active, footer a:active{
   }
 }
 @media all and (max-width:768px){
+  .intro-text {
+    width:100%!important;
+  }
   .hide .text{
-      font-size:2rem;
+      font-size:1rem!important;
   }
   .t2ndLine{
       font-size:1.5rem;
