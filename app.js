@@ -133,8 +133,8 @@
   });
 
 
-  // document.querySelector('#aboutLauncher').addEventListener('click',()=>{
-  //   document.querySelector('.aboutModal').classList.toggle('active');
-  // });
+  document.querySelector('#aboutLauncher').addEventListener('click',()=>{
+    document.querySelector('.aboutModal').classList.toggle('active');
+  });
 
 })();
