@@ -340,6 +340,7 @@ button:active, footer a:active{
   font-size:3rem;}
 .hiddenRow{
   overflow:hidden!important;
+  font-family:'BaskervilleItalic';
 }
 /*     */
 /* rwd */
