@@ -342,9 +342,11 @@ button:active, footer a:active{
   overflow:hidden!important;
   font-family:'BaskervilleItalic';
 }
-/*     */
-/* rwd */
-/*     */
+
+
+/*                                   */
+/*                rwd                */
+/*                                   */
 
 
 @media all and (max-width:1924px){
@@ -369,6 +371,9 @@ button:active, footer a:active{
   }
   .block{
       height:400px!important;
+  }
+  .block:hover header> div{
+    top:0!important;
   }
 }
 @media all and (max-width:1024px){
