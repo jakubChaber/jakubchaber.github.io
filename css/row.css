@@ -72,12 +72,12 @@ a{
 }
 
 .row{
-    box-shadow: 0 20px 80px 0 rgba(0,0,0,0);
+/*     box-shadow: 0 20px 80px 0 rgba(0,0,0,0); */
     position: relative;
     transition:.5s ease;
 }
 
 .row:hover{
-    box-shadow: 0 20px 80px 0 rgba(0,0,0,.45);
+/*     box-shadow: 0 20px 80px 0 rgba(0,0,0,.45); */
     position: relative;
 }
